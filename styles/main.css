@@ -1,0 +1,11 @@
+.text-size-large {
+    font-size: 1.2rem;
+  }
+
+body {
+    background-color: #eeeeee;
+  }
+
+.answer {
+  background-color: #dddddd;
+}

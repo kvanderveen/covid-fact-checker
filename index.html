@@ -1,0 +1,367 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19 Fact Checker</title>
+    <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+
+<body>
+    <div class="jumbotron m-5 bg-primary">
+        <h1 class="text-white display-2">COVID-19 Fact Checker</h1>
+    </div>
+    <div class="row mr-5 ml-5 mb-2 justify-content-center">
+        <div class="col-md-11 col-sm-12">
+            <p class="text-size-large">
+                Let's face it, there is an overwhelming amount of information
+                out there about COVID-19 and much of it is false. Below are a
+                number of statements about COVID-19, some true and some false.
+                Read each statement and click on the accompanying button to
+                reveal the facts.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question1">
+                1. The coronavirus responsible for COVID-19 (SARS-CoV-2)
+                was created in a Chinese lab.
+            </p>
+            <button class="btn btn-primary" id="1">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer1">
+                FALSE. This claim has been made by many, including the
+                <a href="https://www.bbc.com/news/world-us-canada-52496098"
+                    target="_blank">President of the United States</a>.
+                To be absolutely clear here, there is NO evidence to support
+                this claim. Virologists who spend their careers hunting the
+                origin of viruses (and not your unhinged uncle who constantly
+                forwards you conspiracy theories he learned from his Facebook
+                friends) have concluded that the most likely
+                <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30641-1/fulltext"
+                    target="_blank">
+                    origin of SARS-CoV-2</a> is bats.
+                If you're contributing to the spread of misinformation about the
+                origins of the virus responsible for COVID-19, stop.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question2">
+                2. The travel ban from China to the US was early and saved
+                millions
+                of lives.
+            </p>
+            <button class="btn btn-primary" id="2">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer2">
+                FALSE. By the time the US imposed travel restrictions from China
+                on Feb 2,
+                <a href="https://www.washingtonpost.com/outlook/2020/10/01/debate-early-travel-bans-china/"
+                    target="_blank">
+                    forty-five nations</a>
+                had already done so. And after this date,
+                <a href="https://www.nytimes.com/2020/04/04/us/coronavirus-china-travel-restrictions.html"
+                    target="_blank">
+                    tens of thousands</a>
+                continued to arrive from China to the US. Furthermore, it was
+                confirmed that
+                <a href="https://www.cdc.gov/media/releases/2020/p0130-coronavirus-spread.html"
+                    target="_blank">
+                    person-to-person</a>
+                transmission was occurring before the travel restrictions were
+                imposed. And it has been established that the origin of virus in
+                the largest early outbreak, New York City, was
+                <a href="https://www.cdc.gov/mmwr/volumes/69/wr/mm6928a5.htm?s_cid=mm6928a5_w"
+                    target="_blank">
+                    Europe</a>.
+                Given these facts, it seems doubtful the travel restrictions
+                from China to the US had a significant impact on the course of
+                the pandemic in the US.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question3">
+                3. COVID-19 is far more deadly than the flu.
+            </p>
+            <button class="btn btn-primary" id="3">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer3">
+                TRUE. Based upon CDC estimates from the
+                <a href="https://www.cdc.gov/flu/about/burden/2018-2019.html"
+                    target="_blank">
+                    2018-2019 flu season</a>
+                the mortality rate from the seasonal flu is estimated to be
+                around 0.1%
+                (meaning approximately 1 in a 1000 who contract the flu will
+                die). Calculating the mortality rate from a novel virus in the
+                midst of a pandemic is somewhat of a challenge, but a number
+                of studies have estimated a rate of
+                <a href="https://www.nature.com/articles/d41586-020-01738-2"
+                    target="_blank">
+                    0.5-1.0%</a>
+                (suggesting a mortality rate of 5 to 10 times that of the
+                seasonal flu). Aside from the relatively high mortality rates
+                associated with COVID-19, an unknown number of survivors appear
+                to suffer from
+                <a href="https://www.health.harvard.edu/blog/the-tragedy-of-the-post-covid-long-haulers-2020101521173"
+                    target="_blank">
+                    symptoms</a> following the acute phase of infection for an
+                extended period of time.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question4">
+                4. We now have effective treatments for COVID-19.
+            </p>
+            <button class="btn btn-primary" id="4">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer4">
+                TRUE, with caveats. Despite numerous claims that
+                hydroxychloroquine is an
+                effective treatment for COVID-19 (including claims made by the
+                <a href="https://www.reuters.com/article/us-usa-trump-hydroxychloroquine/trump-touts-hydroxychloroquine-even-as-u-s-revokes-emergency-use-status-idUSKBN23M2UO"
+                    target="_blank">
+                    President of the United States</a>), the
+                <a href="https://www.covid19treatmentguidelines.nih.gov/antiviral-therapy/chloroquine-or-hydroxychloroquine-with-or-without-azithromycin/"
+                    target="_blank">
+                    NIH COVID-19 Treatment Guidelines Panel</a>
+                recommends against the use of hydroxychloroquine for the
+                treatment of COVID-19 due to a lack of demonstrated benefit and
+                the potential for harm. Although it does not appear to reduce
+                the death rate, the antiviral medication
+                <a href="https://www.nejm.org/doi/full/10.1056/NEJMoa2007764"
+                    target="_blank">
+                    remdesivir</a>
+                appears to speed the recovery of those hospitalized with
+                COVID-19. In contrast to remdesivir, the steroid
+                <a href="https://jamanetwork.com/journals/jama/fullarticle/2770275"
+                    target="_blank">
+                    dexamethasone</a>
+                has been proven to reduce the death rate among those
+                hospitalized with COVID-19 who require mechanical ventilation or
+                supplemental oxygen. In the absence of published data, it is
+                difficult to assess the efficacy of
+                <a href="https://www.statnews.com/2020/10/07/eli-lilly-monoclonal-antibody-cocktail-covid-19/"
+                    target="_blank">
+                    monoclonal antibody</a>
+                "cocktails" in the treatment of COVID-19. Additionally, with
+                over 50,000 Americans being diagnosed with COVID-19 daily, it
+                seems likely the demand for antibody treatments would far
+                <a href="https://www.nytimes.com/2020/10/20/health/covid-antibody-regeneron.html"
+                    target="_blank">
+                    outstrip the available supply</a>.
+                For the majority of those diagnosed with COVID-19, as with the
+                flu, the most effective remedy currently available is time. For
+                those ill enough to require hospitalization remdesivir may speed
+                recovery and dexamethasone may reduce the odds of dying. The
+                potentially promising therapy of monoclonal antibodies will
+                likely be limited in supply for the foreseeable future.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question5">
+                5. Masks help prevent the spread of COVID-19.
+            </p>
+            <button class="btn btn-primary" id="5">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer5">
+                TRUE. The most common mode of transmission for COVID-19 is via
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html"
+                    target="_blank">
+                    respiratory droplets</a>.
+                When people with COVID-19 cough, sneeze, sing, speak, or
+                breathe, they produce respiratory droplets. These droplets can
+                then be inhaled or deposited on the mucus membranes of those
+                within close contact of someone with COVID-19. Even a cloth
+                mask can significantly reduce the number of respiratory droplets
+                expelled when
+                <a href="https://www.nejm.org/doi/full/10.1056/nejmc2007800"
+                    target="_blank">
+                    speaking</a>.
+                There appears to be some variation in the efficacy of
+                <a href="https://advances.sciencemag.org/content/6/36/eabd3083"
+                    target="_blank">
+                    different facial coverings</a>
+                with neck gaiters and bandanas being the least effective.
+                Need more empirical evidence? Countries with cultural norms or
+                government policies favoring mask use appear to have
+                <a href="https://www.researchgate.net/publication/342198360_Association_of_country-wide_coronavirus_mortality_with_demographics_testing_lockdowns_and_public_wearing_of_masks_Update_June_15_2020"
+                    target="_blank">
+                    lower death rates</a>
+                from COVID-19. Within the US,
+                <a href="https://www.washingtonpost.com/business/2020/06/17/masks-salons-missouri/"
+                    target="_blank">
+                    2 hairstylists</a>
+                with confirmed
+                COVID-19 who wore cloth masks cut the hair of 140 clients (who
+                wore a mix of different mask types) over an 8 day period; no new
+                infections appeared to have resulted from either stylist.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question6">
+                6. I don't currently have any symptoms and therefore cannot
+                spread COVID-19, right?
+            </p>
+            <button class="btn btn-primary" id="6">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer6">
+                FALSE. Laboratory data suggest that people who have contracted
+                COVID-19 appear to be most infectious
+                <a href="https://www.who.int/news-room/q-a-detail/coronavirus-disease-covid-19-how-is-it-transmitted"
+                    target="_blank">
+                    2 days before developing symptoms</a>.
+                Additionally, it is currently estimated that
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/hcp/planning-scenarios.html"
+                    target="_blank">
+                    40% of those with COVID-19</a>
+                may never develop symptoms and yet can still transmit the
+                disease. The reality is that anyone* can transmit
+                COVID-19 without being aware they were infected. Ideally, we'd
+                all behave accordingly.<br><br>
+                *There is
+                <a href="https://www.thelancet.com/journals/laninf/article/PIIS1473-3099(20)30764-7/fulltext"
+                    target="_blank">
+                    documented evidence</a>
+                that reinfection can occur. Individuals previously infected with
+                COVID-19 should continue to take the same precautions as others.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question7">
+                7. I only have a mild cough, runny nose, and no fever, this
+                can't be
+                COVID-19, right?
+            </p>
+            <button class="btn btn-primary" id="7">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer7">
+                FALSE. People with COVID-19 have had a
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"
+                    target="_blank">
+                    wide range of symptoms</a>
+                reported from mild symptoms to severe illness. While a fever and
+                a persistent cough are the most common symptoms associated with
+                COVID-19, researchers have found that more than
+                <a href="https://www.sciencedaily.com/releases/2020/06/200624100047.htm"
+                    target="_blank">
+                    1 in 5 with COVID-19 have no fever</a>.
+                Symptoms
+                <a href="https://www.mayoclinic.org/diseases-conditions/coronavirus/symptoms-causes/syc-20479963"
+                    target="_blank">
+                    associated with COVID-19</a>
+                include fever, cough,
+                shortness of breath, loss of taste and smell, muscle aches,
+                headache, fatigue, runny nose, sore throat, vomiting, and
+                diarrhea. The reality is that without testing it can be
+                impossible in many cases to exclude COVID-19 by symptoms alone.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question8">
+                8.
+                <a href="https://apnews.com/article/ap-fact-check-joe-biden-donald-trump-pandemics-virus-outbreak-60a11714652a576f6bb311117d923c5e"
+                    target="_blank">
+                    "We're rounding the turn. We're rounding the corner. It's going
+                    away."</a> - October 22, 2020
+            </p>
+            <button class="btn btn-primary" id="8">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer8">
+                FALSE. The day after this statement was made, the
+                US reported a record high
+                <a href="https://twitter.com/COVID19Tracking/status/1319777975055699970?s=20"
+                    target="_blank">
+                    83 thousand new COVID-19 cases</a>.
+                Additionally, on Oct 22, the 7-day average number of daily
+                deaths from COVID-19 in the US was
+                <a href="https://covidtracking.com/data/charts/us-daily-deaths"
+                    target="_blank" rel="noopener noreferrer">
+                    789 and rising</a>.
+                As October 2020 draws to a close, by no objective measure is the
+                US "rounding the corner" on COVID-19.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-size-large" id="question9">
+                9. I came in
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/contact-tracing-plan/appendix.html#contact"
+                    target="_blank" rel="noopener noreferrer">
+                    close contact</a>
+                with someone with COVID-19. If I test negative I don't need to
+                quarantine, right?
+            </p>
+            <button class="btn btn-primary" id="9">Fact Check</button>
+            <p class="text-size-large m-4 p-3 rounded d-none answer"
+                id="answer9">
+                FALSE. While it is reasonable to consider testing following a
+                high risk exposure to a known COVID-19 case, completing
+                <a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html"
+                    target="_blank" rel="noopener noreferrer">
+                    a 14 day quarantine</a>
+                from others is recommended regardless of a test result. It is
+                well established that symptoms may develop 2-14 days following
+                exposure. A negative test does NOT exclude the possibility one
+                may develop symptoms later and spread the disease.
+            </p>
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12 border-bottom">
+        </div>
+    </div>
+
+    <div class="row m-4 justify-content-center">
+        <div class="col-md-10 col-sm-12">
+            <p class="text-right text-muted">&copy; Kevin Vanderveen 2020</p>
+        </div>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
